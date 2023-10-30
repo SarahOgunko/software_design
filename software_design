@@ -1,0 +1,43 @@
+ ## 1. What do we mean by **coupling** and **cohesion** when discussing structured design?
+
+ - coupling and cohesion areconcepts that describe the relationships and interactions between modules or components within a system.
+ - coupling refers to the degree of interdependence between modules, indicating how much one module relies on the details of another. 
+ - Cohesion, on the other hand, measures how closely the elements within a module are related.
+ - Low coupling and high cohesion are the goals in structured design.
+
+## 2. What is the difference between **top-down** and **bottom-up** design? Which best describes a function oriented design?
+
+- Top-down design starts with the larger system and breaks it down into smaller, more manageable modules. These modules are then further refined until they are detailed enough to be coded.
+- Bottom-up design  starts with small modules and builds them up into larger subsystems or a complete system. These small modules are designed and tested independently and are gradually combined to create larger, more complex modules.
+-  In function-oriented design. The design starts by defining the main functions the system should perform. These functions are then broken down into smaller sub-functions or modules. This means that top-down approach describes the design best.
+
+## 3. In which design methodology would a **class diagram** be most useful?
+
+- A class diagram is most useful in object-oriented design where the emphasis is on organizing systems into classes, objects, and their relationships. 
+- In contrast, structured design and function-oriented design primarily focus on organizing functions and procedures within a system, without the specific emphasis on classes and objects. So class diagrams would be less useful in this case.
+
+## 4. What are the **four pillars of object oriented programming**? Give a single-sentence description of each.
+
+- Encapsulation: The bundling of data and methods into a class.
+
+- Inheritance: Allows a class to inherit properties and behaviors from another class, promoting code reusability and establishing a relationship between classes.
+
+- Polymorphism:  objects of different classes can be treated as objects of a common superclass, allowing methods to be invoked on objects without knowing their specific type.
+
+- Abstraction: Simplifying complex systems by modeling classes focusing on the essential properties and behaviors while hiding unnecessary details.
+
+## 5. What is the **strategy pattern**? How would its implementation differ between a functional and object oriented system?
+
+- behavioral software design pattern that enables selecting an algorithm at runtime. Instead of implementing a single algorithm directly, code receives run-time instructions as to which in a family of algorithms to use.This provides flexibility and enables dynamic behavior changes in a program by choosing from a family of interchangeable algorithms. 
+- In an object-oriented system, the strategy pattern employs interchangeable algorithm objects encapsulated within classes, implementing specific interfaces or inheriting from a common superclass. 
+- In a functional system, the strategy pattern utilizes higher-order functions or closures, making functions themselves interchangeable strategies. Different functions can be passed as arguments to higher-order functions, allowing dynamic algorithm selection. 
+
+## 6. Imagine your is creating a new online payment system. In order to gain maximum market share it can't be tied to a particular sector - it needs to work just as well when ordering a takeaway as when buying a new coat. Which design methodology would you suggest following? Give some justification for your decision.
+
+- I would choose object oriented design methodology
+- It's flexible and allows for easy addition of features to the existing code.
+- Object-oriented systems can collaborate effectively with external systems or APIs.
+- Encapsulation provides security important for handling sensitive payment information. 
+- Inheritance allows new classes  to inherit properties and behaviors from existing classes. It means that diffrent payment modules for diffrent  sectors, like restaurants or shops, can inherit common functionalities from a generic payment module.
+- Overall it allows for the creation of interchangeable components, ensuring that the system remains flexible, maintainable, and scalable.
+
